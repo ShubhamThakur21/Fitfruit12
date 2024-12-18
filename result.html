@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitFruit: Classification Result</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="hero result-hero">
+        <h1>Classification Result</h1>
+        <p>Here’s what we found about your mango:</p>
+      </header>
+      <main class="result-section">
+        <div class="card">
+          <h2>Result: <span class="highlight">{{ result }}</span></h2>
+          <img
+            src="{{ image_url }}"
+            alt="Uploaded Mango Image"
+            class="result-image"
+          />
+          <a href="/" class="btn-upload-another">Upload Another Image</a>
+        </div>
+      </main>
+      <footer class="footer">
+        <p>&copy; 2024 FitFruit. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>

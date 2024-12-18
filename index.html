@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitFruit: Mango Ripeness Classifier</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="hero">
+        <h1>FitFruit</h1>
+        <p class="tagline">
+          Discover if your mango is naturally ripened or artificially enhanced
+        </p>
+      </header>
+      <main class="upload-section">
+        <div class="card">
+          <h2>Upload Your Mango Image</h2>
+          <form action="/upload" method="post" enctype="multipart/form-data">
+            <input
+              type="file"
+              name="image"
+              accept="image/*"
+              class="file-input"
+              required
+            />
+            <button type="submit" class="btn-submit">Classify Mango</button>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <p>&copy; 2024 FitFruit. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>

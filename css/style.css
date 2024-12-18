@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  margin-bottom: 30px;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0;
+  color: #f39c12;
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: #eeeeee;
+  margin-top: 10px;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  animation: slideIn 1.5s ease;
+}
+
+/* Form */
+.file-input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.file-input:hover {
+  background: #f3f3f3;
+}
+
+.btn-submit {
+  background: #e67e22;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background: #d35400;
+  transform: scale(1.1);
+}
+
+/* Result Section */
+.result-image {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-upload-another {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #3498db;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-upload-another:hover {
+  background: #2980b9;
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #dddddd;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
